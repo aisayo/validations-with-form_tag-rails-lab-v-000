@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get "/authors/new"
   get "/authors/:id", to: "authors#show", as: "author"
   post '/authors', to: "authors#create"
 
