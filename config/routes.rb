@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   post '/authors', to: "authors#create"
 
   get "/posts/:id", to: "posts#show", as: "post"
-  get "/posts/:id/edit", to: "posts#edit", as: "edit_author"
+  get "/posts/:id/edit", to: "posts#edit", as: "edit_post"
   patch 'posts/:id', to: 'posts#update'
 
   # The priority is based upon order of creation: first created -> highest priority.
